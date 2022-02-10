@@ -192,6 +192,7 @@ body {
     z-index: 2;
   }
 }
+
 .btn__3:hover {
   animation: hover-3 0.2s infinite;
 }
@@ -271,5 +272,302 @@ body {
     opacity: 1;
     top: 6rem;
     left: 16rem;
+  }
+}
+.btn__box--6 {
+  position: relative;
+}
+@mixin btn_hover {
+  position: absolute;
+  font-size: 2rem;
+}
+.btn_6-1 {
+  @include btn_hover();
+  top: 7rem;
+  left: 20rem;
+  animation: sticker-1 1.5s infinite alternate-reverse;
+  animation-delay: 0.2s;
+}
+.btn_6-2 {
+  @include btn_hover();
+  top: 7rem;
+  left: 24rem;
+  animation: sticker-2 1.5s infinite alternate-reverse;
+  animation-delay: 0.5s;
+}
+.btn_6-3 {
+  @include btn_hover();
+  top: 7rem;
+  left: 28rem;
+  animation: sticker-3 1.5s infinite alternate-reverse;
+  animation-delay: 0.8s;
+}
+@keyframes sticker-1 {
+  from {
+    top: 7rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
+@keyframes sticker-2 {
+  from {
+    top: 7rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
+@keyframes sticker-3 {
+  from {
+    top: 7rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
+.btn__6 {
+  z-index: 1;
+  background-color: rgb(0, 255, 0);
+  &:hover {
+    .btn_6-1,
+    .btn_6-2,
+    .btn_6-3 {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.btn_6-4,
+.btn_6-5,
+.btn_6-6 {
+  position: absolute;
+  font-size: 2rem;
+  top: 7rem;
+}
+.btn_6-4 {
+  left: 20rem;
+}
+.btn_6-5 {
+  left: 24rem;
+}
+.btn_6-6 {
+  left: 28rem;
+}
+@mixin btn_hover_2 {
+  position: absolute;
+  animation: sticker_hover 1.4s infinite alternate-reverse;
+}
+.btn__6 {
+  &:hover {
+    .btn_6-4 {
+      @include btn_hover_2();
+      animation-delay: 0.2s;
+    }
+  }
+  &:hover {
+    .btn_6-5 {
+      @include btn_hover_2();
+      animation-delay: 0.4s;
+    }
+  }
+  &:hover {
+    .btn_6-6 {
+      @include btn_hover_2();
+      animation-delay: 0.6s;
+    }
+  }
+}
+@keyframes sticker_hover {
+  from {
+    top: 7rem;
+  }
+  to {
+    top: 3rem;
+  }
+}
+.btn__8 {
+  animation: btn-8 2s infinite linear alternate-reverse;
+}
+@keyframes btn-8 {
+  0% {
+    transform: scale(1);
+    background-color: #1164a6;
+  }
+  25% {
+    background-color: #40a722;
+  }
+  50% {
+    background-color: #f1d613;
+  }
+  75% {
+    background-color: aqua;
+  }
+  100% {
+    background-color: #9c398b;
+    transform: scale(1.2);
+  }
+}
+.btn__box--8 {
+  position: relative;
+}
+.btn__8 {
+  &:hover {
+    span {
+      &::before {
+        content: "🌈";
+        position: absolute;
+        top: -4.5rem;
+        left: 3rem;
+        font-size: 2.5rem;
+        animation: rainbow 0.2s infinite linear alternate-reverse;
+      }
+    }
+  }
+}
+@keyframes rainbow {
+  0% {
+  }
+  50% {
+    top: -5.5rem;
+    left: 5rem;
+    transform: rotate(45deg);
+  }
+  100% {
+    top: -4.5rem;
+    left: 7rem;
+    transform: rotate(120deg);
+  }
+}
+.btn__box--7 {
+  position: relative;
+}
+[class^="btn__7-"] {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem;
+}
+
+$left-space: 2rem;
+$top-space: 2rem;
+$span-rotate: 10deg;
+
+@mixin span-space($left-space, $top-space, $span-rotate) {
+  top: $top-space;
+  left: $left-space;
+  transform: rotate($span-rotate);
+  animation: 0.6s infinite linear alternate-reverse;
+}
+.btn__7-1 {
+  @include span-space(13rem, 6rem, -25deg);
+  animation-delay: 0s;
+  animation-name: span-anim;
+}
+.btn__7-2 {
+  @include span-space(18rem, 1rem, 15deg);
+  animation-delay: 0.3s;
+  animation-name: span-anim;
+}
+.btn__7-3 {
+  @include span-space(26rem, 1.5rem, -15deg);
+  animation-delay: 0s;
+  animation-name: span-anim;
+}
+.btn__7-4 {
+  @include span-space(32rem, 3.5rem, 15deg);
+  animation-delay: 0.3s;
+  animation-name: span-anim;
+}
+.btn__7-5 {
+  @include span-space(21rem, 13rem, -15deg);
+  animation-delay: 0s;
+  animation-name: span-anim;
+}
+.btn__7-6 {
+  @include span-space(28rem, 13rem, 15deg);
+  animation-delay: 0.3s;
+  animation-name: span-anim;
+}
+@keyframes span-anim {
+  from {
+  }
+  to {
+    opacity: 0;
+  }
+}
+.btn__box--4 {
+  position: relative;
+}
+.btn__4 {
+  &:hover {
+    &::before {
+      content: "OMG YAS";
+      position: absolute;
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: bold;
+      top: 5rem;
+      left: 22rem;
+      animation: btn__4-hover 1s linear forwards;
+    }
+  }
+}
+@keyframes btn__4-hover {
+  0% {
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: 0rem;
+    opacity: 0;
+  }
+}
+.btn__2 {
+  position: relative;
+  background-color: rgb(248, 152, 7);
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    // z-index: -1;
+    border-radius: 2.5rem;
+    animation: btn__2-anim 1s infinite linear;
+  }
+  &:hover {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: #fff;
+      // z-index: -1;
+      border-radius: 2.5rem;
+      animation: btn__2-hover 0.2s infinite linear;
+    }
+  }
+}
+@keyframes btn__2-anim {
+  0% {
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes btn__2-hover {
+  0% {
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
   }
 }
