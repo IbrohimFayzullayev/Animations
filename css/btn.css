@@ -64,17 +64,18 @@ html {
   text-transform: uppercase;
 }
 .btn__1 {
-  animation: btn-1 1s infinite;
+  animation: btn-1 0.3s infinite;
+  animation-direction: alternate-reverse;
 }
 @keyframes btn-1 {
   /* 0% {
     transform: rotate(0);
   } */
-  35% {
-    transform: rotate(10deg);
+  0% {
+    transform: rotate(8deg);
   }
-  70% {
-    transform: rotate(-10deg);
+  100% {
+    transform: rotate(-8deg);
   }
   /* 100% {
     transform: rotate(0);
@@ -120,40 +121,6 @@ html {
     box-shadow: 0 0 8rem rgb(255, 255, 255);
   }
 }
-/* .btn__3 {
-  animation: btn-3 3s infinite;
-}
-@keyframes btn-3 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-/* .btn__4__hover_text {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #fff;
-  opacity: 0;
-}
-.btn__4:hover .btn__4__hover_text {
-  animation: hover-4 2s infinite;
-}
-@keyframes hover-4 {
-  0% {
-    margin-bottom: -3rem;
-    opacity: 0;
-  }
-  100% {
-    margin-bottom: 2rem;
-    opacity: 1;
-  }
-} */
-/* .btn__4::after {
-  content: "Your friends would do it       Your cat would love you for it";
-  display: block;
-} */
 .btn__box--4 {
   position: relative;
 }
@@ -166,7 +133,6 @@ html {
   top: 13rem;
   /* width: 20rem; */
 }
-
 .btn__4__hover_text {
   position: absolute;
   font-size: 1.2rem;
@@ -175,18 +141,14 @@ html {
   top: 6rem;
   opacity: 0;
 }
-.btn__4:hover .btn__4__hover_text {
-  animation: hover-4 2s infinite;
+/* .btn__4:hover .btn__4::placeholder {
+  animation: hover-4 0.5s infinite alternate-reverse;
 }
 @keyframes hover-4 {
-  0% {
+  from {
     opacity: 0;
   }
-  10% {
+  to {
     opacity: 1;
   }
-  100% {
-    opacity: 1;
-    top: 3rem;
-  }
-}
+} */
