@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.menu {
+  margin: 10rem auto;
+  width: 6rem;
+}
+.menu_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+.menu__line {
+  height: 0.6rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+  background-color: rgb(252, 116, 5);
+}
+.menu_box:active .menu__line:first-child {
+  transform: rotate(45deg);
+  transition: 0.5s;
+  margin-bottom: -1.5rem;
+}
+.menu_box:active .menu__line:nth-child(3) {
+  margin-top: -1.6rem;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.menu_box:active .menu__line:nth-child(2) {
+  transform: translateX(2rem);
+  transition: 0.8s;
+  opacity: 0;
+}

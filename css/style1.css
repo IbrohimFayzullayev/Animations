@@ -1,0 +1,90 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.loaders {
+  margin: 0 auto;
+  width: 40rem;
+}
+.loaders-wrapper {
+  margin: 15rem auto;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  position: relative;
+}
+.loader {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: aqua;
+  position: absolute;
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.loader_1 {
+  background-color: aqua;
+  right: 13%;
+  top: 13%;
+  z-index: 1;
+}
+
+.loader_2 {
+  background-color: bisque;
+  top: 0;
+  right: 45%;
+  z-index: 2;
+}
+.loader_3 {
+  background-color: rgb(56, 141, 6);
+  left: 13%;
+  top: 13%;
+  z-index: 3;
+}
+.loader_4 {
+  background-color: rgb(48, 156, 170);
+  left: 0;
+  top: 45%;
+  z-index: 4;
+}
+.loader_5 {
+  background-color: rgb(156, 15, 69);
+  right: 0;
+  top: 45%;
+  z-index: 5;
+}
+.loader_6 {
+  background-color: rgb(228, 132, 15);
+  bottom: 13%;
+  left: 13%;
+  z-index: 6;
+}
+.loader_7 {
+  background-color: rgb(128, 18, 143);
+  bottom: 13%;
+  right: 13%;
+  z-index: 7;
+}
+.loader_8 {
+  background-color: rgb(214, 37, 24);
+  bottom: 0;
+  left: 45%;
+  z-index: 8;
+}
+@keyframes circle {
+  from {
+    height: 6rem;
+    width: 6rem;
+  }
+  to {
+    top: 41%;
+    left: 41%;
+    height: 10rem;
+    width: 10rem;
+  }
+} */
