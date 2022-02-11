@@ -518,3 +518,77 @@ body {
   from { }
   to {
     transform: rotate(45deg) translateY(0.6rem) translateX(-1rem); } }
+
+.menu__3 {
+  width: 6rem;
+  margin: 3rem auto; }
+
+.menu__3--4 {
+  position: absolute;
+  top: 1.6rem; }
+
+.menu__3-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer; }
+  .menu__3-box:hover .menu__3--4 {
+    animation: menu__3-4 0.2s linear forwards; }
+  .menu__3-box:hover .menu__3--2 {
+    animation: menu__3-2 0.2s linear forwards; }
+  .menu__3-box:hover .menu__3--1,
+  .menu__3-box:hover .menu__3--3 {
+    animation: menu__3-hover 0.4s ease-in forwards; }
+
+@keyframes menu__3-4 {
+  from { }
+  to {
+    transform: rotate(45deg); } }
+
+@keyframes menu__3-2 {
+  from { }
+  to {
+    transform: rotate(-45deg); } }
+
+@keyframes menu__3-hover {
+  form { }
+  to {
+    transform: scale(0.1);
+    opacity: 0; } }
+
+.menu__4 {
+  width: 6rem;
+  margin: 3rem auto; }
+
+.menu__4-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center; }
+  .menu__4-box:hover {
+    cursor: pointer; }
+    .menu__4-box:hover .menu__4--1 {
+      animation: menu_4-1 0.3s linear forwards; }
+    .menu__4-box:hover .menu__4--2 {
+      animation: menu_4-2 0.3s linear forwards; }
+    .menu__4-box:hover .menu__4--3 {
+      animation: menu_4-3 0.3s linear forwards; }
+
+@keyframes menu_4-1 {
+  from { }
+  to {
+    margin-top: 3rem;
+    transform: rotate(45deg); } }
+
+@keyframes menu_4-2 {
+  from { }
+  to {
+    opacity: 0;
+    transform: scale(0.5); } }
+
+@keyframes menu_4-3 {
+  from { }
+  to {
+    transform: rotate(-45deg);
+    margin-top: -3rem; } }
